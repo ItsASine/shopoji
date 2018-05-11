@@ -1,13 +1,11 @@
 {
-    "name": "hello-world",
-    "description": "Sample NodeJs web application",
-    "version": "0.0.1",
-    "private": true,
-    "devDependencies": {
-        "mocha": "5.0.0",
-        "unit.js": "2.0.0"
-    },
-    "scripts": {
-        "test": "mocha --recursive tests"
-    }
+  "name": "Shopoji",
+  "description": "Shopkeep game that's single player with a free market driven by all players",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "pusher": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {}
 }

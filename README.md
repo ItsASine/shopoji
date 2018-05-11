@@ -1,64 +1,76 @@
-Welcome to the AWS CodeStar sample web application
-==================================================
+# Shopoji
 
-This sample code helps get you started with a simple Node.js web service deployed by AWS CloudFormation to AWS Lambda and Amazon API Gateway.
+**[Play it here!](https://a2lbkuyqj8.execute-api.us-east-2.amazonaws.com/Prod/)**
 
-What's Here
------------
+![Screenshot of the game](public/assets/img/demo.png)
 
-This sample includes:
+## About
 
-* README.md - this file
-* buildspec.yml - this file is used by AWS CodeBuild to package your
-  application for deployment to AWS Lambda
-* index.js - this file contains the sample Node.js code for the web service
-* template.yml - this file contains the AWS Serverless Application Model (AWS SAM) used
-  by AWS CloudFormation to deploy your application to AWS Lambda and Amazon API
-  Gateway.
-* tests/ - this directory contains unit tests for your application
+Shopoji is a web game that runs in any browser. You sell your emoji stock to NPCs in the quest for more money.
 
+As a unique twist, however, there is a free market. Prices are in flux due to supply and demand, and you need to account for that when pricing your inventory.
 
-What Do I Do Next?
-------------------
+The market, in this case, is the other current players. The game itself is single player, but the market is controlled by the entire playerbase. You'll never interact with other players, but your pricing will affect their games as theirs will yours. Thus, you'll need strategy to make your emoji business the most thriving one in the market!
 
-If you have checked out a local copy of your repository you can start making
-changes to the sample code.  We suggest making a small change to index.js first,
-so you can see how changes pushed to your project's repository are automatically
-picked up by your project pipeline and deployed to AWS Lambda and Amazon API Gateway.
-(You can watch the pipeline progress on your AWS CodeStar project dashboard.)
-Once you've seen how that works, start developing your own code, and have fun!
+## How to Play
 
-To run your tests locally, go to the root directory of the
-sample code and run the `npm test` command, which
-AWS CodeBuild also runs through your `buildspec.yml` file.
+Once you enter the game, your initial inventory is all you'll have to work with. As more people enter the game after you, the difficulty ramps up as you'll need to make your emojis more enticing to your customers. 
 
-To test your new code during the release process, modify the existing tests or
-add tests to the tests directory. AWS CodeBuild will run the tests during the
-build stage of your project pipeline. You can find the test results
-in the AWS CodeBuild console.
+The Messages on the right of the screen show the latest market events.     
+The Global Market on the top of the screen gives you an idea for what emojis are scarce and which are in abundence (this may not line up with your shop's inventory -- that just means other people are more likely to get those sales!).     
+The rest of the screen is around your shop itself -- your inventory and your customers. Sell emojis to make money for your shop! 
 
-Learn more about AWS CodeBuild and how it builds and tests your application here:
-https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html
+<!-- how to sell stuff -->
 
-Learn more about AWS Serverless Application Model (AWS SAM) and how it works here:
-https://github.com/awslabs/serverless-application-model/blob/master/HOWTO.md
+Objective: Have lots of money in your shop. There's no leaderboard -- just the endless quest for more money.
 
-AWS Lambda Developer Guide:
-http://docs.aws.amazon.com/lambda/latest/dg/deploying-lambda-apps.html
+***
 
-Learn more about AWS CodeStar by reading the user guide, and post questions and
-comments about AWS CodeStar on our forum.
+## Why was this game made?
 
-User Guide: http://docs.aws.amazon.com/codestar/latest/userguide/welcome.html
+This application was developed for two reasons: 1. to win a contest and 2. because I've always wanted a single player game like this.
 
-Forum: https://forums.aws.amazon.com/forum.jspa?forumID=248
+The contest in question was sponsored by dev.to and the details can be found [here](https://dev.to/devteam/first-ever-dev-contest-build-a-realtime-app-with-pusher-4nhp). The only requirement was to use the Pusher real-time api.
 
-What Should I Do Before Running My Project in Production?
-------------------
+The game I wanted was [Recettear](https://en.wikipedia.org/wiki/Recettear%3A_An_Item_Shop%27s_Tale) but with a "real" economy. Pusher's API seemed like a great way to pull that off, because it could handle the global market while I dealt with the actual single player gameplay.
 
-AWS recommends you review the security best practices recommended by the framework
-author of your selected sample application before running it in production. You
-should also regularly review and apply any available patches or associated security
-advisories for dependencies used within your application.
+## Tech Stack
 
-Best Practices: https://docs.aws.amazon.com/codestar/latest/userguide/best-practices.html?icmpid=docs_acs_rm_sec
+* [Pusher API](https://pusher.com/)
+* JavaScript
+    * Node.js
+    * jQuery
+    * MomentJS
+    * vanillaJS
+* CSS
+    * Bootstrap
+* HTML
+* [AWS CodeStar](https://aws.amazon.com/codestar/)
+    * AWS CodePipeline
+    * AWS CodeBuild
+    * AWS CloudFormation
+    * AWS Lambda
+    * AWS S3
+    * Probably more
+
+### Dev Tools
+* Github - [Source Code](https://github.com/ItsASine/shopoji)
+    * The only thing needed locally is to run `npm i` to get the 1 dependency of the project: pusher
+    * Also, you'll need to set up your own Pusher project to get credentials -- you all aren't getting my app secret and whatnot
+* Webstorm IDE
+* GitKracken
+
+## Dev Blog
+
+* May 5, 2018: [Pusher Shopkeep Game - Initial Idea](https://dev.to/itsasine/pusher-shopkeep-game---initial-idea-36po)
+* May 6, 2018: [Pusher Project - Why I'll Never Be DevOps](https://dev.to/itsasine/pusher-project---why-ill-never-be-devops-520d)
+* May 9, 2018: [Shopoji - Initial Front End With Working Effects!](https://dev.to/itsasine/shopoji---initial-front-end-with-working-effects-i56)
+
+## Roadmap
+
+_Possible future features_
+
+* Add the ability to actually sell things (getting there very soon!)
+* Add the ability to buy more inventory
+* Add more emojis to the marketplace with categories as well (food, tools, weapons, toys, etc)
+* Add NPCs preferences for buying things. A knight might pay more for a :dagger: but won't be apt to pay all that much extra for a :balloon:
