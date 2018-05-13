@@ -8,19 +8,19 @@
 
 Shopoji is a web game that runs in any browser. You sell your emoji stock to NPCs in the quest for more money.
 
-As a unique twist, however, there is a free market. Prices are in flux due to supply and demand, and you need to account for that when pricing your inventory.
+As a unique twist, however, there is a free market. <!-- Prices are in flux due to supply and demand, and you need to account for that when pricing your inventory. -->
 
-The market, in this case, is the other current players. The game itself is single player, but the market is controlled by the entire playerbase. You'll never interact with other players, but your pricing will affect their games as theirs will yours. Thus, you'll need strategy to make your emoji business the most thriving one in the market!
+The market, in this case, is the other current players. The game itself is single player, but the market is controlled by the entire playerbase. <!-- You'll never interact with other players, but your pricing will affect their games as theirs will yours. Thus, you'll need strategy to make your emoji business the most thriving one in the market! -->
 
 ## How to Play
 
 Once you enter the game, your initial inventory is all you'll have to work with. As more people enter the game after you, the difficulty ramps up as you'll need to make your emojis more enticing to your customers. 
 
-The Messages on the right of the screen show the latest market events.     
-The Global Market on the top of the screen gives you an idea for what emojis are scarce and which are in abundence (this may not line up with your shop's inventory -- that just means other people are more likely to get those sales!).     
+The Messages on the right of the screen show the latest market events. It's limited to the most recent 5.     
+The Global Market on the top of the screen gives you an idea for what emojis are scarce and which are in abundence (this may not line up with your shop's inventory -- that just means other people are playing!).     
 The rest of the screen is around your shop itself -- your inventory and your customers. Sell emojis to make money for your shop! 
 
-<!-- how to sell stuff -->
+Each customer has a spot for you to name your price and a button to sell it to that person for that price. You can then use that money in your shop to increase your emoji inventory.
 
 Objective: Have lots of money in your shop. There's no leaderboard -- just the endless quest for more money.
 
@@ -65,12 +65,13 @@ The game I wanted was [Recettear](https://en.wikipedia.org/wiki/Recettear%3A_An_
 * May 5, 2018: [Pusher Shopkeep Game - Initial Idea](https://dev.to/itsasine/pusher-shopkeep-game---initial-idea-36po)
 * May 6, 2018: [Pusher Project - Why I'll Never Be DevOps](https://dev.to/itsasine/pusher-project---why-ill-never-be-devops-520d)
 * May 9, 2018: [Shopoji - Initial Front End With Working Effects!](https://dev.to/itsasine/shopoji---initial-front-end-with-working-effects-i56)
+* May 12, 2018: []()
 
 ## Roadmap
 
 _Possible future features_
 
-* Add the ability to actually sell things (getting there very soon!)
-* Add the ability to buy more inventory
+* Have your game more affected by other players
 * Add more emojis to the marketplace with categories as well (food, tools, weapons, toys, etc)
 * Add NPCs preferences for buying things. A knight might pay more for a :dagger: but won't be apt to pay all that much extra for a :balloon:
+* Add market preferences for buying things. A scarce item will sell for more than an abundant one.
