@@ -66,6 +66,7 @@ The game I wanted was [Recettear](https://en.wikipedia.org/wiki/Recettear%3A_An_
 * May 6, 2018: [Pusher Project - Why I'll Never Be DevOps](https://dev.to/itsasine/pusher-project---why-ill-never-be-devops-520d)
 * May 9, 2018: [Shopoji - Initial Front End With Working Effects!](https://dev.to/itsasine/shopoji---initial-front-end-with-working-effects-i56)
 * May 12, 2018: [Shopoji - Pusher Presence Channels are cool](https://dev.to/itsasine/shopoji---pusher-presence-channels-are-cool-4nhg)
+* May 13, 2018: Official Entry
 
 ## Roadmap
 

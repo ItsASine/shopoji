@@ -1,7 +1,7 @@
 {
   "name": "Shopoji",
   "description": "Shopkeep game that's single player with a free market driven by all players",
-  "version": "0.0.1",
+  "version": "1.0",
   "private": true,
   "dependencies": {
     "pusher": "^1.5.1"

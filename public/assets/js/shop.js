@@ -1,5 +1,5 @@
 // Enable pusher logging - don't include this in production
-Pusher.logToConsole = true;
+// Pusher.logToConsole = true;
 
 var handleLogs = function(message, isLocal, isSuccessful) {
   var messages = $('#messages');
@@ -97,9 +97,9 @@ var channel = pusher.subscribe('free-market');
 
 channel.bind('new-shop', function(data) {
   handleLogs(data.message, false);
-  handleApples(true, data.inventory.apple);
+  handleApples(false, data.inventory.apple);
 });
 channel.bind('new-sale', function(data) {
   handleLogs(data.message, false);
-  handleApples(true, -1);
+  handleApples(false, -1);
 });
