@@ -18,8 +18,6 @@ exports.get = function(event, context, callback) {
     headers: {'content-type': 'text/html'}
   };
 
-  console.log("Hello!");
-
   pusher.trigger('free-market', 'new-shop', {
     "message": "A new shop has joined the market!",
     "inventory": {
